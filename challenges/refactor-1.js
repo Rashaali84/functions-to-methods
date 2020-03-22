@@ -2,10 +2,13 @@
 const mergeArrays = (arr1, arr2) => {
   return [...arr1, ...arr2];
 }
-
+debugger;
 const obj = {
   array: [3],
-  mergeArrays: function (arrToMerge) { }
+  mergeArrays: function (arrToMerge) {
+
+    return [...this.array, ...arrToMerge];
+  }
 }
 
 
